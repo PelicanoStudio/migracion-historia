@@ -1,0 +1,57 @@
+# --- REGLA MAESTRA: IGNORAR TODO POR DEFECTO ---
+*
+
+# --- EXCEPCIONES: ¡PERMITIR SOLO LO QUE NOS SIRVE! ---
+
+# 1. Archivos de Configuración de Git y el propio ignore
+!.gitignore
+
+# 2. Tu Script Migrador (Vital)
+!migrador_final.py
+
+# 3. La Estructura Web (HTMLs)
+#!*.html
+!*/
+#!www.historiaeconomicadechile.cl/
+#!www.historiaeconomicadechile.cl/**/*.html
+
+# 4. Los Documentos (PDFs)
+#!*.pdf
+#!www.historiaeconomicadechile.cl/**/*.pdf
+
+# 5. Las Imágenes (JPG, PNG, GIF)
+!*.jpg
+!*.jpeg
+!*.png
+#!*.gif
+!www.historiaeconomicadechile.cl/**/*.jpg
+!www.historiaeconomicadechile.cl/**/*.jpeg
+!www.historiaeconomicadechile.cl/**/*.png
+#!www.historiaeconomicadechile.cl/**/*.gif
+
+# --- BLOQUEO EXPLÍCITO DE BASURA CONFIRMADA ---
+# Aunque la regla "*" ya los ignora, esto es doble seguridad para carpetas pesadas
+hts-cache/
+backblue.gif
+fade.gif
+cookies.txt
+hts-log.txt
+*.tmp
+*.z
+*.whtt
+*.rar
+*.zip
+*.log
+*.css
+*.js
+*.ini
+*.lst
+
+# --- BLOQUEO DE CARPETAS EXTERNAS INÚTILES (Vistas en tu estructura.txt) ---
+#archivochile.com/
+#econ.uchile.cl/
+#maxcdn.bootstrapcdn.com/
+#mpra.ub.uni-muenchen.de/
+#obtienearchivo.bcn.cl/
+#repositorio.uchile.cl/
+# Agrega aquí cualquier otro dominio externo que HTTrack haya descargado
