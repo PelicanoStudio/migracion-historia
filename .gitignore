@@ -16,8 +16,8 @@
 !www.historiaeconomicadechile.cl/**/*.html
 
 # 4. Los Documentos (PDFs)
-#!*.pdf
-#!www.historiaeconomicadechile.cl/**/*.pdf
+!*.pdf
+!www.historiaeconomicadechile.cl/**/*.pdf
 
 # 5. Las Imágenes (JPG, PNG, GIF)
 !*.jpg
