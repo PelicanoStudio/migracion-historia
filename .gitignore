@@ -10,10 +10,10 @@
 !migrador_final.py
 
 # 3. La Estructura Web (HTMLs)
-#!*.html
+!*.html
 !*/
-#!www.historiaeconomicadechile.cl/
-#!www.historiaeconomicadechile.cl/**/*.html
+!www.historiaeconomicadechile.cl/
+!www.historiaeconomicadechile.cl/**/*.html
 
 # 4. Los Documentos (PDFs)
 #!*.pdf
